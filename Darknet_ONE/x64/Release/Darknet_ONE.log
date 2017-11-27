@@ -1,0 +1,82 @@
+﻿Build started 26-11-2017 20:52:12.
+     1>Project "E:\Darknet\darknet-master_vs\Darknet_TWO\Darknet_ONE\Darknet_ONE.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\Ceemple\OpenCV4VS\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _CRT_SECURE_NO_WARNINGS /D OPENCV /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TC /errorReport:prompt rnn_vid.c
+         rnn_vid.c
+     1>rnn_vid.c(28): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>rnn_vid.c(75): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>rnn_vid.c(85): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>rnn_vid.c(109): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>rnn_vid.c(139): warning C4305: 'function' : truncation from 'double' to 'float'
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Darknet\darknet-master_vs\Darknet_TWO\x64\Release\Darknet_ONE.exe" /NOLOGO /LIBPATH:E:\Ceemple\OpenCV4VS\lib "E:\Darknet\darknet-master_vs\Darknet_ONE\Darknet_ONE\pthreadVC2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib StatTimer.lib clBLAS.lib clFFT.lib opencv_calib3d300.lib opencv_core300.lib opencv_cuda300.lib opencv_cudaarithm300.lib opencv_cudabgsegm300.lib opencv_cudacodec300.lib opencv_cudafeatures2d300.lib opencv_cudafilters300.lib opencv_cudaimgproc300.lib opencv_cudalegacy300.lib opencv_cudaoptflow300.lib opencv_cudastereo300.lib opencv_cudawarping300.lib opencv_cudev300.lib opencv_features2d300.lib opencv_flann300.lib opencv_highgui300.lib opencv_imgcodecs300.lib opencv_imgproc300.lib opencv_ml300.lib opencv_objdetect300.lib opencv_photo300.lib opencv_shape300.lib opencv_stitching300.lib opencv_superres300.lib opencv_ts300.lib opencv_video300.lib opencv_videoio300.lib opencv_videostab300.lib opengl32.lib glu32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Darknet\darknet-master_vs\Darknet_TWO\x64\Release\Darknet_ONE.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Darknet\darknet-master_vs\Darknet_TWO\x64\Release\Darknet_ONE.lib" /MACHINE:X64 x64\Release\activations.obj
+         x64\Release\activation_layer.obj
+         x64\Release\art.obj
+         x64\Release\avgpool_layer.obj
+         x64\Release\batchnorm_layer.obj
+         x64\Release\blas.obj
+         x64\Release\box.obj
+         x64\Release\captcha.obj
+         x64\Release\cifar.obj
+         x64\Release\classifier.obj
+         x64\Release\coco.obj
+         x64\Release\col2im.obj
+         x64\Release\compare.obj
+         x64\Release\connected_layer.obj
+         x64\Release\convolutional_layer.obj
+         x64\Release\cost_layer.obj
+         x64\Release\crnn_layer.obj
+         x64\Release\crop_layer.obj
+         x64\Release\cuda.obj
+         x64\Release\darknet.obj
+         x64\Release\data.obj
+         x64\Release\deconvolutional_layer.obj
+         x64\Release\demo.obj
+         x64\Release\detection_layer.obj
+         x64\Release\detector.obj
+         x64\Release\dice.obj
+         x64\Release\dropout_layer.obj
+         x64\Release\gemm.obj
+         x64\Release\go.obj
+         x64\Release\gru_layer.obj
+         x64\Release\im2col.obj
+         x64\Release\image.obj
+         x64\Release\layer.obj
+         x64\Release\list.obj
+         x64\Release\local_layer.obj
+         x64\Release\lsd.obj
+         x64\Release\lstm_layer.obj
+         x64\Release\matrix.obj
+         x64\Release\maxpool_layer.obj
+         x64\Release\network.obj
+         x64\Release\nightmare.obj
+         x64\Release\normalization_layer.obj
+         x64\Release\option_list.obj
+         x64\Release\parser.obj
+         x64\Release\region_layer.obj
+         x64\Release\regressor.obj
+         x64\Release\reorg_layer.obj
+         x64\Release\rnn.obj
+         x64\Release\rnn_layer.obj
+         x64\Release\rnn_vid.obj
+         x64\Release\route_layer.obj
+         x64\Release\segmenter.obj
+         x64\Release\shortcut_layer.obj
+         x64\Release\softmax_layer.obj
+         x64\Release\super.obj
+         x64\Release\swag.obj
+         x64\Release\tag.obj
+         x64\Release\time.obj
+         x64\Release\tree.obj
+         x64\Release\utils.obj
+         x64\Release\voxel.obj
+         x64\Release\writing.obj
+         x64\Release\yolo.obj
+         Generating code
+         Finished generating code
+         Darknet_ONE.vcxproj -> E:\Darknet\darknet-master_vs\Darknet_TWO\x64\Release\Darknet_ONE.exe
+     1>Done Building Project "E:\Darknet\darknet-master_vs\Darknet_TWO\Darknet_ONE\Darknet_ONE.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.11

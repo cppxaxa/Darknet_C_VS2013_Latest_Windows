@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="activations.h" />
+    <ClInclude Include="activation_layer.h" />
+    <ClInclude Include="avgpool_layer.h" />
+    <ClInclude Include="batchnorm_layer.h" />
+    <ClInclude Include="blas.h" />
+    <ClInclude Include="box.h" />
+    <ClInclude Include="classifier.h" />
+    <ClInclude Include="col2im.h" />
+    <ClInclude Include="connected_layer.h" />
+    <ClInclude Include="convolutional_layer.h" />
+    <ClInclude Include="cost_layer.h" />
+    <ClInclude Include="crnn_layer.h" />
+    <ClInclude Include="crop_layer.h" />
+    <ClInclude Include="cuda.h" />
+    <ClInclude Include="darknet.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="deconvolutional_layer.h" />
+    <ClInclude Include="demo.h" />
+    <ClInclude Include="detection_layer.h" />
+    <ClInclude Include="dropout_layer.h" />
+    <ClInclude Include="gemm.h" />
+    <ClInclude Include="getopt.h" />
+    <ClInclude Include="gru_layer.h" />
+    <ClInclude Include="im2col.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="layer.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="local_layer.h" />
+    <ClInclude Include="lstm_layer.h" />
+    <ClInclude Include="matrix.h" />
+    <ClInclude Include="maxpool_layer.h" />
+    <ClInclude Include="network.h" />
+    <ClInclude Include="normalization_layer.h" />
+    <ClInclude Include="option_list.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="region_layer.h" />
+    <ClInclude Include="reorg_layer.h" />
+    <ClInclude Include="rnn_layer.h" />
+    <ClInclude Include="route_layer.h" />
+    <ClInclude Include="shortcut_layer.h" />
+    <ClInclude Include="softmax_layer.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="stb_image_write.h" />
+    <ClInclude Include="sys_time.h" />
+    <ClInclude Include="times.h" />
+    <ClInclude Include="tree.h" />
+    <ClInclude Include="unistd.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="activations.c" />
+    <ClCompile Include="activation_layer.c" />
+    <ClCompile Include="art.c" />
+    <ClCompile Include="avgpool_layer.c" />
+    <ClCompile Include="batchnorm_layer.c" />
+    <ClCompile Include="blas.c" />
+    <ClCompile Include="box.c" />
+    <ClCompile Include="captcha.c" />
+    <ClCompile Include="cifar.c" />
+    <ClCompile Include="classifier.c" />
+    <ClCompile Include="coco.c" />
+    <ClCompile Include="col2im.c" />
+    <ClCompile Include="compare.c" />
+    <ClCompile Include="connected_layer.c" />
+    <ClCompile Include="convolutional_layer.c" />
+    <ClCompile Include="cost_layer.c" />
+    <ClCompile Include="crnn_layer.c" />
+    <ClCompile Include="crop_layer.c" />
+    <ClCompile Include="cuda.c" />
+    <ClCompile Include="darknet.c" />
+    <ClCompile Include="data.c" />
+    <ClCompile Include="deconvolutional_layer.c" />
+    <ClCompile Include="demo.c" />
+    <ClCompile Include="detection_layer.c" />
+    <ClCompile Include="detector.c" />
+    <ClCompile Include="dice.c" />
+    <ClCompile Include="dropout_layer.c" />
+    <ClCompile Include="gemm.c" />
+    <ClCompile Include="go.c" />
+    <ClCompile Include="gru_layer.c" />
+    <ClCompile Include="im2col.c" />
+    <ClCompile Include="image.c" />
+    <ClCompile Include="layer.c" />
+    <ClCompile Include="list.c" />
+    <ClCompile Include="local_layer.c" />
+    <ClCompile Include="lsd.c" />
+    <ClCompile Include="lstm_layer.c" />
+    <ClCompile Include="matrix.c" />
+    <ClCompile Include="maxpool_layer.c" />
+    <ClCompile Include="network.c" />
+    <ClCompile Include="nightmare.c" />
+    <ClCompile Include="normalization_layer.c" />
+    <ClCompile Include="option_list.c" />
+    <ClCompile Include="parser.c" />
+    <ClCompile Include="region_layer.c" />
+    <ClCompile Include="regressor.c" />
+    <ClCompile Include="reorg_layer.c" />
+    <ClCompile Include="rnn.c" />
+    <ClCompile Include="rnn_layer.c" />
+    <ClCompile Include="rnn_vid.c" />
+    <ClCompile Include="route_layer.c" />
+    <ClCompile Include="segmenter.c" />
+    <ClCompile Include="shortcut_layer.c" />
+    <ClCompile Include="softmax_layer.c" />
+    <ClCompile Include="super.c" />
+    <ClCompile Include="swag.c" />
+    <ClCompile Include="tag.c" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="tree.c" />
+    <ClCompile Include="utils.c" />
+    <ClCompile Include="voxel.c" />
+    <ClCompile Include="writing.c" />
+    <ClCompile Include="yolo.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD539F90-8A82-45B6-852F-AEFE536C88FE}</ProjectGuid>
+    <RootNamespace>Darknet_ONE</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(Opencv4VS)\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;OPENCV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(Opencv4VS)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>E:\Darknet\darknet-master_vs\Darknet_ONE\Darknet_ONE\pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);StatTimer.lib;clBLAS.lib;clFFT.lib;opencv_calib3d300d.lib;opencv_core300d.lib;opencv_cuda300d.lib;opencv_cudaarithm300d.lib;opencv_cudabgsegm300d.lib;opencv_cudacodec300d.lib;opencv_cudafeatures2d300d.lib;opencv_cudafilters300d.lib;opencv_cudaimgproc300d.lib;opencv_cudalegacy300d.lib;opencv_cudaoptflow300d.lib;opencv_cudastereo300d.lib;opencv_cudawarping300d.lib;opencv_cudev300d.lib;opencv_features2d300d.lib;opencv_flann300d.lib;opencv_highgui300d.lib;opencv_imgcodecs300d.lib;opencv_imgproc300d.lib;opencv_ml300d.lib;opencv_objdetect300d.lib;opencv_photo300d.lib;opencv_shape300d.lib;opencv_stitching300d.lib;opencv_superres300d.lib;opencv_ts300d.lib;opencv_video300d.lib;opencv_videoio300d.lib;opencv_videostab300d.lib;opengl32.lib;glu32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(Opencv4VS)\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;OPENCV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>E:\Darknet\darknet-master_vs\Darknet_ONE\Darknet_ONE\pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);StatTimer.lib;clBLAS.lib;clFFT.lib;opencv_calib3d300.lib;opencv_core300.lib;opencv_cuda300.lib;opencv_cudaarithm300.lib;opencv_cudabgsegm300.lib;opencv_cudacodec300.lib;opencv_cudafeatures2d300.lib;opencv_cudafilters300.lib;opencv_cudaimgproc300.lib;opencv_cudalegacy300.lib;opencv_cudaoptflow300.lib;opencv_cudastereo300.lib;opencv_cudawarping300.lib;opencv_cudev300.lib;opencv_features2d300.lib;opencv_flann300.lib;opencv_highgui300.lib;opencv_imgcodecs300.lib;opencv_imgproc300.lib;opencv_ml300.lib;opencv_objdetect300.lib;opencv_photo300.lib;opencv_shape300.lib;opencv_stitching300.lib;opencv_superres300.lib;opencv_ts300.lib;opencv_video300.lib;opencv_videoio300.lib;opencv_videostab300.lib;opengl32.lib;glu32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(Opencv4VS)\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
